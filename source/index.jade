@@ -1,20 +1,10 @@
-doctype html
-html(lang='en')
-	head
-	body
-		div Hello world!
-		h1
-			| This is a heading but I'd like to have
-			br
-			| a line break in it
-		p#id.class Hi!
-		a(href="") link
-		//- base.jade
-		header.pagetitle
-			h1
-				block pagetitle
-			p 
-				block par 
+extends templates/wrapper
  
-		main.pagecontent
-			block pagecontent
+block title
+    | Static Site With Prepros
+ 
+block content
+    #section01.pane
+        .wrapper
+            h3 Welcome
+            p Content goes here
