@@ -169,4 +169,36 @@ h_tags()
                 padding 0
                 li
                     transform: skewY($skew);
-                    
+.prev, .next
+    background-color $color_shadow
+    raised()
+    font-size $type_wrapper_font_size
+    display inline-box
+    position absolute
+    left 50%
+    width 80 * $px
+    margin-left -40 * $px
+ 
+.prev
+    padding-bottom 8 * $px
+    padding-top 25 * $px
+    top 0
+    &:before
+        position absolute
+        bottom 35 * $px
+        content " "
+        border-left: 20 * $px solid transparent
+        border-right: 20 * $px solid transparent
+        border-bottom: 20 * $px solid $color_link_default
+ 
+.next
+    padding-top 8 * $px
+    padding-bottom 25 * $px
+    bottom 0
+    &:before
+        position absolute
+        top 35 * $px
+        content " "
+        border-left: 20 * $px solid transparent
+        border-right: 20 * $px solid transparent
+        border-top: 20 * $px solid $color_link_default

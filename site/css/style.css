@@ -330,3 +330,41 @@ h6 {
   -ms-transform: skewY(1.5deg);
   transform: skewY(1.5deg);
 }
+.prev,
+.next {
+  background-color: #000;
+  -webkit-box-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0,0,0,0.5);
+  box-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0,0,0,0.5);
+  font-size: 1.125rem;
+  display: inline-box;
+  position: absolute;
+  left: 50%;
+  width: 5rem;
+  margin-left: -2.5rem;
+}
+.prev {
+  padding-bottom: 0.5rem;
+  padding-top: 1.5625rem;
+  top: 0;
+}
+.prev:before {
+  position: absolute;
+  bottom: 2.1875rem;
+  content: " ";
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
+  border-bottom: 1.25rem solid #c00;
+}
+.next {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5625rem;
+  bottom: 0;
+}
+.next:before {
+  position: absolute;
+  top: 2.1875rem;
+  content: " ";
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
+  border-top: 1.25rem solid #c00;
+}
