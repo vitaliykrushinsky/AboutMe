@@ -7,3 +7,28 @@ block content
     #section01.pane.hello
         .wrapper
             include content/hello
+            a( class="next", href="#section02" ) NEXT
+    #section02.pane.skills
+        .wrapper
+            a( class="prev", href="#section01" ) PREV
+            include content/skills
+            a( class="next", href="#section03") NEXT
+    #section03.pane.systems
+        .wrapper
+            a( class="prev", href="#section02" ) PREV
+            include content/systems
+            a( class="next", href="#section04" ) NEXT
+    #section04.pane.types
+        .wrapper
+            a( class="prev", href="#section03" ) PREV
+            include content/types
+            a( class="next", href="#section05" ) NEXT
+    #section05.pane.tools
+        .wrapper
+            a( class="prev",href="#section04" ) PREV
+            include content/tools
+            a( class="next", href="#section06" ) NEXT
+    #section06.pane.contact
+        .wrapper
+            a( class="prev",href="#section05" ) PREV
+            include content/contact
