@@ -5,3 +5,127 @@
 @import nib
 @import _normalize
 
+// *************
+// VARIABLES
+// *************
+ 
+$base_font_size = 16
+//standard default browser size is 16px, so this brings base font size to 18px while keeping things flexible for user
+$base_font_size_ems = unit($base_font_size / 16, em)
+ 
+$px = unit(1 / $base_font_size, rem)
+ 
+$type_regular_font_family = 'Indie Flower'
+$type_h_font_family = 'Bangers'
+ 
+$type_h_font_sizes = {
+    'h1': 3,
+    'h2': 2.35,
+    'h3': 1.95,
+    'h4': 1.65,
+    'h5': 1.313,
+    'h6': 1.125
+}
+ 
+$type_h_font_vmargins = {
+    'h1': 1,
+    'h2': 1,
+    'h3': 1.313,
+    'h4': 1.313,
+    'h5': 1.313,
+    'h6': 1.313
+}
+ 
+$type_h_font_lineheight = 1.313em
+ 
+$type_wrapper_font_size = 18 * $px
+ 
+$layout_site_width = 1200
+ 
+$color_site_bg = lighten( black, 10% )
+$color_wrapper_bg = white
+ 
+$color_text_default = black
+$color_link_default = #c00
+$color_link_hover = saturate($color_link_default, 70%)
+ 
+$color_highlight = #ffc600
+$color_shadow = black
+ 
+ 
+// *************
+// MIXINS
+// *************
+ 
+h_tags($factor=1)
+    h1, h2, h3, h4, h5, h6
+            font-family $type_h_font_family
+            line-height $type_h_font_lineheight
+            font-weight 400
+    for h_lvl, value in $type_h_font_sizes
+        {h_lvl}
+            ((value * $factor) < 1) ? $size = 1 : $size = value * $factor
+            font-size unit( $size, em )
+            margin unit( $type_h_font_vmargins[h_lvl], em ) 0
+ 
+raised()
+    box-shadow 1 * $px 1 * $px 3 * $px rgba(0,0,0,.5)
+ 
+ 
+// *************
+// STYLES
+// *************
+ 
+ 
+// ELEMENTS
+// -------------
+ 
+*
+    box-sizing border-box
+ 
+html, body
+    height 100%
+ 
+html
+    font-size $base_font_size_ems
+    font-family $type_regular_font_family
+    background-color $color_site_bg
+    color $color_text_default
+    overflow-x hidden
+ 
+img
+    max-width 100%
+    height auto
+ 
+a, a:link, a:visited
+    text-decoration none
+    color $color_link_default
+ 
+a:hover, a:active
+    text-decoration none
+    color $color_link_hover
+ 
+//H tag font family, size, line-height, margin
+h_tags()
+ 
+ 
+// CLASSES
+// -------------
+ 
+.pane
+    display table
+    width 100%
+    height 100%
+    position relative
+    padding 20 * $px
+ 
+.wrapper
+    display table-cell
+    vertical-align middle
+    margin 0 auto
+    padding 80 * $px 0
+    background-color $color_wrapper_bg
+    font-size $type_wrapper_font_size
+    text-align center
+    border 10 * $px solid $color_shadow
+    box-shadow 4 * $px 4 * $px 5 * $px rgba(0,0,0,.5)
