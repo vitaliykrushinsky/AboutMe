@@ -266,3 +266,67 @@ h6 {
   -webkit-box-shadow: 0.25rem 0.25rem 0.3125rem rgba(0,0,0,0.5);
   box-shadow: 0.25rem 0.25rem 0.3125rem rgba(0,0,0,0.5);
 }
+.wrapper h1 {
+  margin-top: 0;
+  font-family: 'Indie Flower';
+}
+.wrapper > ul {
+  max-width: 75rem;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.wrapper > ul > li {
+  -webkit-box-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0,0,0,0.5);
+  box-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0,0,0,0.5);
+  border: 0.5rem solid #000;
+  background-color: #c00;
+  float: left;
+  width: 24.5%;
+  margin: 0 0.25%;
+  height: 14.375rem;
+  padding: 2.5rem 1.875rem;
+  -webkit-transform: skewY(-1.5deg);
+  -moz-transform: skewY(-1.5deg);
+  -o-transform: skewY(-1.5deg);
+  -ms-transform: skewY(-1.5deg);
+  transform: skewY(-1.5deg);
+}
+.wrapper > ul > li:nth-child(8n+1),
+.wrapper > ul > li:nth-child(8n+3),
+.wrapper > ul > li:nth-child(8n+6),
+.wrapper > ul > li:nth-child(8n+8) {
+  background: #ffc600;
+}
+.wrapper > ul > li:nth-child(4n+5) {
+  clear: left;
+}
+.wrapper > ul > li:nth-child(4n+1) {
+  margin-top: 0.75%;
+}
+.wrapper > ul > li:nth-child(4n+2) {
+  margin-top: 0.5%;
+}
+.wrapper > ul > li:nth-child(4n+3) {
+  margin-top: 0.25%;
+}
+.wrapper > ul li h3 {
+  margin: 0;
+  -webkit-transform: skewY(1.5deg);
+  -moz-transform: skewY(1.5deg);
+  -o-transform: skewY(1.5deg);
+  -ms-transform: skewY(1.5deg);
+  transform: skewY(1.5deg);
+}
+.wrapper > ul li ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.wrapper > ul li ul li {
+  -webkit-transform: skewY(1.5deg);
+  -moz-transform: skewY(1.5deg);
+  -o-transform: skewY(1.5deg);
+  -ms-transform: skewY(1.5deg);
+  transform: skewY(1.5deg);
+}

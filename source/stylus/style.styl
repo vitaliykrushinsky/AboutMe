@@ -129,3 +129,44 @@ h_tags()
     text-align center
     border 10 * $px solid $color_shadow
     box-shadow 4 * $px 4 * $px 5 * $px rgba(0,0,0,.5)
+    h1
+        margin-top 0
+        font-family $type_regular_font_family
+    > ul
+        $skew = 1.5deg
+        max-width $layout_site_width * $px
+        list-style-type none
+        margin 0 auto
+        padding 0
+        > li
+            $spacing = 0.25%
+            raised()
+            border 8 * $px solid black
+            background-color $color_link_default
+            float left
+            width 24.5%
+            margin 0 $spacing
+            height 230 * $px
+            padding 40 * $px 30 * $px
+            transform: skewY($skew * -1);
+            &:nth-child(8n+1), &:nth-child(8n+3), &:nth-child(8n+6), &:nth-child(8n+8)
+                background $color_highlight
+            &:nth-child(4n+5)
+                clear left
+            &:nth-child(4n+1)
+                margin-top 3 * $spacing
+            &:nth-child(4n+2)
+                margin-top 2 * $spacing
+            &:nth-child(4n+3)
+                margin-top 1 * $spacing
+        li
+            h3
+                margin 0
+                transform: skewY($skew);
+            ul
+                list-style-type none
+                margin 0
+                padding 0
+                li
+                    transform: skewY($skew);
+                    
