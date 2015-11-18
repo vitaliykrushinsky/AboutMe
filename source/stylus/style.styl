@@ -119,7 +119,20 @@ h_tags()
     height 100%
     position relative
     padding 20 * $px
- 
+.hello
+    .wrapper
+        font-size 42 * $px
+        h1
+            color $color_highlight
+            font-size 5.2em
+            line-height 0.7em
+            margin-bottom 0.7em
+            font-family 'Bangers'
+            background-color $color_shadow
+            text-shadow 12 * $px 12 * $px 0 $color_shadow, -3 * $px -3 * $px 0 $color_shadow, 3 * $px -3 * $px 0 $color_shadow, -3 * $px 3 * $px 0 $color_shadow, 3 * $px 3 * $px 0 $color_shadow
+        h3, h4, h5, h6
+            font-family 'Indie Flower'
+            margin 1em 0    
 .wrapper
     display table-cell
     vertical-align middle
@@ -214,3 +227,72 @@ h_tags()
             height 140 * $px
             a
                 color black
+// *************
+// QUERIES
+// *************
+ 
+$query_01 = "(max-width: " + $layout_site_width * $px + ")"
+ 
+@media $query_01
+    h_tags(0.9)
+    .wrapper > ul > li
+        $spacing = 0.25%
+        width 32.8%
+        &:nth-child(2n+1)
+            background $color_highlight
+        &:nth-child(2n+2)
+            background $color_link_default
+        &:nth-child(4n+5)
+            clear none
+        &:nth-child(3n+4)
+            clear left
+        &:nth-child(3n+1)
+            margin-top 3 * $spacing
+        &:nth-child(3n+2)
+            margin-top 2 * $spacing
+        &:nth-child(3n+3)
+            margin-top 1 * $spacing
+ 
+ 
+$query_02 = "(max-width: " + 1000 * $px + ")"
+ 
+@media $query_02
+    h_tags(0.8)
+ 
+ 
+ 
+$query_03 = "(max-width: " + 800 * $px + ")"
+ 
+@media $query_03
+    h_tags(0.7)
+    .hello
+        .wrapper
+            font-size 36 * $px
+    .wrapper > ul > li
+        width 49.5%
+        &:nth-child(4n+1), &:nth-child(4n+4)
+            background $color_highlight
+        &:nth-child(4n+2), &:nth-child(4n+3)
+            background $color_link_default
+        &:nth-child(3n+4)
+            clear none
+        &:nth-child(2n+3)
+            clear left
+ 
+ 
+ 
+$query_04 = "(max-width: " + 500 * $px + ")"
+ 
+@media $query_04
+    .hello
+        .wrapper
+            font-size 24 * $px
+    h_tags(0.6)
+    .wrapper > ul > li
+        height auto
+        width 99.5%
+        margin 0.25% !important
+        &:nth-child(2n+1)
+            background $color_highlight
+        &:nth-child(2n+2)
+            background $color_link_default
