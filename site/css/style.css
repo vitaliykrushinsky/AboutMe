@@ -13178,3 +13178,12 @@ h6 {
   border-right: 1.25rem solid transparent;
   border-top: 1.25rem solid #c00;
 }
+.tools .wrapper ul li {
+  height: 8.75rem;
+}
+.contact .wrapper ul li {
+  height: 8.75rem;
+}
+.contact .wrapper ul li a {
+  color: #000;
+}
