@@ -9,13 +9,25 @@
     <link href="//fonts.googleapis.com/css?family=Bangers|Indie+Flower" rel="stylesheet" type="text/css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/site.min.js"></script>
+    <script> (function() {
+  var w;
+
+  w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+  if (w > 1200) {
+    new WOW().init();
+  }
+
+}).call(this);
+
+    </script>
   </head>
   <body>
     <div id="section01" class="pane hello">
       <div class="wrapper">
-        <h1>Hello</h1>
-        <h3>I'm Vitaliy Krushinsky</h3>
-        <h4>Specializes in web development. In the web space my focus is front end development and full stack development using JavaScript language on both side that makes development more efficient, flexible and power. I like Nodejs platform that give us super power Ecosystem called Node Package Registry. </h4><a href="#section02" class="next">NEXT</a>
+        <h1 data-wow-duration="1s" class="wow slideInDown">Hello</h1>
+        <h3 data-wow-duration="1s" data-wow-delay="1s" class="wow slideInRight">I'm Vitaliy Krushinsky</h3>
+        <h4 data-wow-duration="1s" data-wow-delay="2s" class="wow slideInLeft">Specializes in web development. In the web space my focus is front end development and full stack development using JavaScript language on both side that makes development more efficient, flexible and power. I like Nodejs platform that give us super power Ecosystem called Node Package Registry. </h4><a href="#section02" class="next">NEXT</a>
       </div>
     </div>
     <div id="section02" class="pane skills">

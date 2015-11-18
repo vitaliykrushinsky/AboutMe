@@ -10,5 +10,9 @@ html( lang="en" )
         link( href='//fonts.googleapis.com/css?family=Bangers|Indie+Flower', rel='stylesheet', type='text/css' )
         script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
         script( src='js/site.min.js' )
+        script 
+            :coffee
+                w = Math.max document.documentElement.clientWidth, window.innerWidth or 0
+                new WOW().init() if w > 1200
     body
         block content
