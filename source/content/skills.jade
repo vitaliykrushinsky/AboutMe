@@ -1,25 +1,27 @@
-h1
+include mixins
+
++panelHead()
     | My Skills Are...
 ul
     //- Start square
-    li
-        h3 Skill One
+    +showSquare()
+        h3 HTML
         ul
             li HTML
             li Extra Info
             li More info
     //- End square
     //- Start square
-    li
-        h3 Skill Two
+    +showSquare()
+        h3 CSS
         ul
             li CSS
             li Extra Info
             li More info
     //- End square
     //- Start square
-    li
-        h3 Skill Three
+    +showSquare()
+        h3 JavaScript
         ul
             li JavaScript
             li Extra Info
