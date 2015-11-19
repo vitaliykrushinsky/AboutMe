@@ -44,7 +44,7 @@ $type_wrapper_font_size = 18 * $px
 $layout_site_width = 1200
  
 $color_site_bg = lighten( black, 10% )
-$color_wrapper_bg = white
+$color_wrapper_bg = #fffad5
  
 $color_text_default = black
 $color_link_default = #c00
@@ -120,19 +120,28 @@ h_tags()
     position relative
     padding 20 * $px
 .hello
+    background-position: center center
+    background-size cover
+    display flex
     .wrapper
-        font-size 42 * $px
+        font-size 36 * $px
         h1
             color $color_highlight
-            font-size 5.2em
+            font-size 5em
             line-height 0.7em
-            margin-bottom 0.7em
+            margin-bottom 0.3em
             font-family 'Bangers'
             background-color $color_shadow
             text-shadow 12 * $px 12 * $px 0 $color_shadow, -3 * $px -3 * $px 0 $color_shadow, 3 * $px -3 * $px 0 $color_shadow, -3 * $px 3 * $px 0 $color_shadow, 3 * $px 3 * $px 0 $color_shadow
         h3, h4, h5, h6
             font-family 'Indie Flower'
-            margin 1em 0    
+            margin 0.5em 0
+        .about
+            margin-bottom 0.2em 
+            width 95%
+            margin 0 auto
+                
+             
 .wrapper
     display table-cell
     vertical-align middle
@@ -230,11 +239,20 @@ h_tags()
 // *************
 // QUERIES
 // *************
- 
+
+$query_00 = "(min-width: " + 1200 * $px + ")"
+
+@media $query_00
+    .hello
+        .wrapper
+            .about
+                width 80%
+                margin 0 auto
+
 $query_01 = "(max-width: " + $layout_site_width * $px + ")"
  
 @media $query_01
-    h_tags(0.9)
+    h_tags(0.8)
     .wrapper > ul > li
         $spacing = 0.25%
         width 32.8%
@@ -253,18 +271,16 @@ $query_01 = "(max-width: " + $layout_site_width * $px + ")"
         &:nth-child(3n+3)
             margin-top 1 * $spacing
  
- 
+
 $query_02 = "(max-width: " + 1000 * $px + ")"
  
 @media $query_02
     h_tags(0.8)
  
- 
- 
 $query_03 = "(max-width: " + 800 * $px + ")"
  
 @media $query_03
-    h_tags(0.7)
+    h_tags(0.6)
     .hello
         .wrapper
             font-size 36 * $px
@@ -281,13 +297,13 @@ $query_03 = "(max-width: " + 800 * $px + ")"
  
  
  
-$query_04 = "(max-width: " + 500 * $px + ")"
+$query_04 = "(max-width: " + 525 * $px + ")"
  
 @media $query_04
     .hello
         .wrapper
             font-size 24 * $px
-    h_tags(0.6)
+    h_tags(0.5)
     .wrapper > ul > li
         height auto
         width 99.5%

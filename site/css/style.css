@@ -13064,14 +13064,26 @@ h6 {
   position: relative;
   padding: 1.25rem;
 }
+.hello {
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
 .hello .wrapper {
-  font-size: 2.625rem;
+  font-size: 2.25rem;
 }
 .hello .wrapper h1 {
   color: #ffc600;
-  font-size: 5.2em;
+  font-size: 5em;
   line-height: 0.7em;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.3em;
   font-family: 'Bangers';
   background-color: #000;
   text-shadow: 0.75rem 0.75rem 0 #000, -0.1875rem -0.1875rem 0 #000, 0.1875rem -0.1875rem 0 #000, -0.1875rem 0.1875rem 0 #000, 0.1875rem 0.1875rem 0 #000;
@@ -13081,14 +13093,19 @@ h6 {
 .hello .wrapper h5,
 .hello .wrapper h6 {
   font-family: 'Indie Flower';
-  margin: 1em 0;
+  margin: 0.5em 0;
+}
+.hello .wrapper .about {
+  margin-bottom: 0.2em;
+  width: 95%;
+  margin: 0 auto;
 }
 .wrapper {
   display: table-cell;
   vertical-align: middle;
   margin: 0 auto;
   padding: 5rem 0;
-  background-color: #fff;
+  background-color: #fffad5;
   font-size: 1.125rem;
   text-align: center;
   border: 0.625rem solid #000;
@@ -13206,6 +13223,12 @@ h6 {
 .contact .wrapper ul li a {
   color: #000;
 }
+@media (min-width: 75rem) {
+  .hello .wrapper .about {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 75rem) {
   h1,
   h2,
@@ -13218,27 +13241,27 @@ h6 {
     font-weight: 400;
   }
   h1 {
-    font-size: 2.7em;
+    font-size: 2.4em;
     margin: 1em 0;
   }
   h2 {
-    font-size: 2.115em;
+    font-size: 1.88em;
     margin: 1em 0;
   }
   h3 {
-    font-size: 1.755em;
+    font-size: 1.56em;
     margin: 1.313em 0;
   }
   h4 {
-    font-size: 1.485em;
+    font-size: 1.32em;
     margin: 1.313em 0;
   }
   h5 {
-    font-size: 1.1817em;
+    font-size: 1.0504em;
     margin: 1.313em 0;
   }
   h6 {
-    font-size: 1.0125em;
+    font-size: 1em;
     margin: 1.313em 0;
   }
   .wrapper > ul > li {
@@ -13314,19 +13337,19 @@ h6 {
     font-weight: 400;
   }
   h1 {
-    font-size: 2.1em;
+    font-size: 1.8em;
     margin: 1em 0;
   }
   h2 {
-    font-size: 1.645em;
+    font-size: 1.41em;
     margin: 1em 0;
   }
   h3 {
-    font-size: 1.365em;
+    font-size: 1.17em;
     margin: 1.313em 0;
   }
   h4 {
-    font-size: 1.155em;
+    font-size: 1em;
     margin: 1.313em 0;
   }
   h5 {
@@ -13358,7 +13381,7 @@ h6 {
     clear: left;
   }
 }
-@media (max-width: 31.25rem) {
+@media (max-width: 32.8125rem) {
   .hello .wrapper {
     font-size: 1.5rem;
   }
@@ -13373,15 +13396,15 @@ h6 {
     font-weight: 400;
   }
   h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin: 1em 0;
   }
   h2 {
-    font-size: 1.41em;
+    font-size: 1.175em;
     margin: 1em 0;
   }
   h3 {
-    font-size: 1.17em;
+    font-size: 1em;
     margin: 1.313em 0;
   }
   h4 {
