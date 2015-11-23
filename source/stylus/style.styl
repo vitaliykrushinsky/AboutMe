@@ -146,7 +146,7 @@ h_tags()
     display table-cell
     vertical-align middle
     margin 0 auto
-    padding 80 * $px 0
+    padding 50 * $px 0
     background-color $color_wrapper_bg
     font-size $type_wrapper_font_size
     text-align center
@@ -154,6 +154,7 @@ h_tags()
     box-shadow 4 * $px 4 * $px 5 * $px rgba(0,0,0,.5)
     h1
         margin-top 0
+        margin-bottom 0.6em
         font-family $type_regular_font_family
     > ul
         $skew = 1.5deg
@@ -168,9 +169,10 @@ h_tags()
             background-color $color_link_default
             float left
             width 24.5%
+            
             margin 0 $spacing
-            height 230 * $px
-            padding 40 * $px 30 * $px
+            // height 558 * $px
+            padding 35 * $px 25 * $px
             transform: skewY($skew * -1);
             &:nth-child(8n+1), &:nth-child(8n+3), &:nth-child(8n+6), &:nth-child(8n+8)
                 background $color_highlight
@@ -192,6 +194,7 @@ h_tags()
                 padding 0
                 li
                     transform: skewY($skew);
+                    font-size 1.2em
 .prev, .next
     background-color $color_shadow
     raised()
