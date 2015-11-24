@@ -13069,12 +13069,6 @@ h6 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
 }
 .hello .wrapper {
   font-size: 2.25rem;
@@ -13216,13 +13210,24 @@ h6 {
   border-top: 1.25rem solid #c00;
 }
 .contact .wrapper ul li {
-  height: 8.75rem;
+  height: 10rem;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+.contact .wrapper ul li h3 {
+  vertical-align: middle;
+  text-transform: lowercase;
+  font-size: 1.5em;
+  font-family: 'Indie Flower', serif;
 }
 .contact .wrapper ul li a {
   color: #000;
 }
 .contact .wrapper ul li a:hover {
   font-size: 1.21em;
+}
+.contact .wrapper ul li:nth-child(1) h3 {
+  font-size: 1.1em;
 }
 .types .wrapper ul {
   height: 7.5rem;

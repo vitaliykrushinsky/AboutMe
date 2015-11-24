@@ -122,7 +122,6 @@ h_tags()
 .hello
     background-position: center center
     background-size cover
-    display flex
     .wrapper
         font-size 36 * $px
         h1
@@ -230,12 +229,24 @@ h_tags()
         border-top: 20 * $px solid $color_link_default 
 .contact
     .wrapper
-        ul li
-            height 140 * $px
-            a
-                color black
-                &:hover
-                        font-size 1.21em
+        ul 
+            li
+                height 160 * $px
+                padding-right 15 * $px
+                padding-left 15 * $px
+                
+                h3  
+                    vertical-align middle
+                    text-transform lowercase
+                    font-size 1.5em
+                    font-family 'Indie Flower', serif 
+                a
+                    color black
+                    &:hover
+                            font-size 1.21em
+                &:nth-child(1)
+                    h3 
+                        font-size 1.1em
 .types
     .wrapper
         ul
