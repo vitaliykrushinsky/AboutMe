@@ -243,7 +243,7 @@ h_tags()
                 a
                     color black
                     &:hover
-                            font-size 1.21em
+                        font-size 1.21em
                 &:nth-child(1)
                     h3 
                         font-size 1.1em
@@ -273,37 +273,31 @@ $query_00 = "(min-width: " + 1200 * $px + ")"
                 width 80%
                 margin 0 auto
 
-$query_01 = "(max-width: " + $layout_site_width * $px + ")"
- 
-@media $query_01
-    h_tags(0.8)
-    .wrapper > ul > li
-        $spacing = 0.25%
-        width 32.8%
-        &:nth-child(2n+1)
-            background $color_highlight
-        &:nth-child(2n+2)
-            background $color_link_default
-        &:nth-child(4n+5)
-            clear none
-        &:nth-child(3n+4)
-            clear left
-        &:nth-child(3n+1)
-            margin-top 3 * $spacing
-        &:nth-child(3n+2)
-            margin-top 2 * $spacing
-        &:nth-child(3n+3)
-            margin-top 1 * $spacing
- 
+//$query_01 = "(max-width: " + $layout_site_width * $px + ")"
+// 
+//@media $query_01
+//    h_tags(0.8)
+//    .wrapper > ul > li
+//        $spacing = 0.25%
+//        width 32.8%
+//        &:nth-child(2n+1)
+//            background $color_highlight
+//        &:nth-child(2n+2)
+//            background $color_link_default
+//        &:nth-child(4n+5)
+//            clear none
+//        &:nth-child(3n+4)
+//            clear left
+//        &:nth-child(3n+1)
+//            margin-top 3 * $spacing
+//        &:nth-child(3n+2)
+//            margin-top 2 * $spacing
+//        &:nth-child(3n+3)
+//            margin-top 1 * $spacing
 
-$query_02 = "(max-width: " + 1000 * $px + ")"
+$query_02 = "(max-width: " + 1200 * $px + ")"
  
 @media $query_02
-    h_tags(0.8)
- 
-$query_03 = "(max-width: " + 800 * $px + ")"
- 
-@media $query_03
     h_tags(0.6)
     .hello
         .wrapper
@@ -318,7 +312,11 @@ $query_03 = "(max-width: " + 800 * $px + ")"
             clear none
         &:nth-child(2n+3)
             clear left
+
+$query_03 = "(max-width: " + 1000 * $px + ")"
  
+@media $query_03
+    h_tags(0.8) 
  
  
 $query_04 = "(max-width: " + 525 * $px + ")"
