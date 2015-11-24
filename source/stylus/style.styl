@@ -227,23 +227,28 @@ h_tags()
         content " "
         border-left: 20 * $px solid transparent
         border-right: 20 * $px solid transparent
-        border-top: 20 * $px solid $color_link_default
-.tools
-    .wrapper
-        ul li
-            height 140 * $px
- 
+        border-top: 20 * $px solid $color_link_default 
 .contact
     .wrapper
         ul li
             height 140 * $px
             a
                 color black
+                &:hover
+                        font-size 1.21em
 .types
     .wrapper
-        ul li
-            a
-                color black
+        ul
+            height 120 * $px
+            li
+                padding-right 15 * $px
+                padding-left 15 * $px
+                a
+                    color black
+                    &:hover
+                        text-decoration underline
+                        
+
 // *************
 // QUERIES
 // *************

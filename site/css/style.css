@@ -13215,17 +13215,27 @@ h6 {
   border-right: 1.25rem solid transparent;
   border-top: 1.25rem solid #c00;
 }
-.tools .wrapper ul li {
-  height: 8.75rem;
-}
 .contact .wrapper ul li {
   height: 8.75rem;
 }
 .contact .wrapper ul li a {
   color: #000;
 }
+.contact .wrapper ul li a:hover {
+  font-size: 1.21em;
+}
+.types .wrapper ul {
+  height: 7.5rem;
+}
+.types .wrapper ul li {
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
 .types .wrapper ul li a {
   color: #000;
+}
+.types .wrapper ul li a:hover {
+  text-decoration: underline;
 }
 @media (min-width: 75rem) {
   .hello .wrapper .about {
