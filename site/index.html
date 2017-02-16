@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Static Site With Prepros</title>
+    <title>Static Site With Prepros
+    </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,83 +11,74 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/site.min.js"></script>
-    <script> (function() {
-  var w;
-
-  w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
-  if (w > 1200) {
-    new WOW().init();
-  }
-
-}).call(this);
-
+    <script type="text/javascript">
+      //- var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+      //- if (w > 1200) new WOW().init()
+      new WOW().init()
     </script>
   </head>
   <body>
-    <div id="section01" class="pane hello">
+    <div class="pane hello" id="section01">
       <div class="wrapper">
-        <h1 data-wow-duration="1s" class="wow slideInDown">Hello</h1>
-        <h3 data-wow-duration="1s" data-wow-delay="1s" class="wow slideInLeft">I'm Vitaliy Krushinsky,<br>Web developer</h3>
+        <h1 class="wow slideInDown" data-wow-duration="1s">Hello</h1>
+        <h3 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">I'm Vitaliy Krushinsky,<br>Web developer</h3>
         <div class="about">
-          <h5 data-wow-duration="1s" data-wow-delay="2s" class="wow zoomIn">In the web space I am focused on front-end and back-end development using JavaScript language on both sides that makes the development more efficient, flexible and powerful.</h5>
-        </div><a href="#section02" data-wow-delay="3s" class="next wow bounceIn">NEXT</a>
+          <h5 class="wow zoomIn" data-wow-duration="1s" data-wow-delay="2s">In the web space I am focused on front-end and back-end development using JavaScript language on both sides that makes the development more efficient, flexible and powerful.</h5>
+        </div><a class="next wow bounceIn" href="#section02" data-wow-delay="3s">NEXT</a>
       </div>
     </div>
-    <div id="section02" class="pane skills">
-      <div class="wrapper"><a href="#section01" class="prev">PREV</a>
+    <div class="pane skills" id="section02">
+      <div class="wrapper"><a class="prev" href="#section01">PREV</a>
                 <h1 class="wow fadeIn">My Skills Are...
                 </h1>
         <ul>
-                  <li data-wow-duration="0.25s" data-wow-delay="1s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1s">
                     <h3>HTML</h3>
                     <ul>
                       <li>Html, Html5</li>
                       <li><strong>Html template:</strong><br>Jade</li>
                     </ul>
                   </li>
-                  <li data-wow-duration="0.25s" data-wow-delay="1.25s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1.25s">
                     <h3>CSS</h3>
                     <ul>
                       <li>CSS, CSS3</li>
                       <li><strong>Framework:</strong><br>Bootstrap</li>
-                      <li><strong>Preprocessors:</strong> <br>Less,
+                      <li><strong>Preprocessors:</strong> <br>
+                        Less,
                         Stylus,
                         Sass
                       </li>
                       <li><strong>Sass Grid System:</strong><br>Susy</li>
                       <li>
-                        <strong>Sass Framework:</strong>
-                        Compass      
-                      </li>
+                        <strong>Sass Framework:</strong>Compass      </li>
                     </ul>
                   </li>
-                  <li data-wow-duration="0.25s" data-wow-delay="1.5s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1.5s">
                     <h3>JavaScript</h3>
                     <ul>
-                      <li><strong>JavaScript:</strong><br>ES6,
+                      <li><strong>JavaScript:</strong><br>
+                        ES6,
                         Ajax,
                         JSON<br>Node<br>RESTful API
                       </li>
-                      <li><strong>MV* Frameworks:</strong><br>Angular,
+                      <li><strong>MV* Frameworks:</strong><br>
+                        Angular,
                         Express
                       </li>
                       <li>
-                        <strong>Library:</strong> 
-                        jQuery
-                      </li>
-                      <li><strong>Node Packages:</strong><br>Gulp,
+                        <strong>Library:</strong> jQuery</li>
+                      <li><strong>Node Packages:</strong><br>
+                        Gulp,
                         Grunt,
                         Bower,
                         Yeoman
                       </li>
                       <li>
-                        <strong>Polyfills:</strong>
-                        Modernizer, Respond
-                      </li>
+                        <strong>Polyfills:</strong>Modernizer, Respond</li>
                     </ul>
                   </li>
-                  <li data-wow-duration="0.25s" data-wow-delay="1.75s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1.75s">
                     <h3>Others</h3>
                     <ul>
                       <li><strong>VCS:</strong> Git(Github)</li>
@@ -94,65 +86,63 @@
                       <li><strong>OS:</strong> Windows, Linux</li>
                       <li><strong>Web-developer toolkit:</strong><br>Emmet</li>
                       <li>
-                        <strong>Tools:</strong> 
-                        Sublime Text,<br>Brackets,<br>Visual Studio Code,<br>Photoshop,<br>Balsamiq Mockups,
-                      </li>
+                        <strong>Tools:</strong> Sublime Text,<br>Brackets,<br>Visual Studio Code,<br>Photoshop,<br>Balsamiq Mockups,</li>
                     </ul>
                   </li>
-        </ul><a href="#section03" data-wow-delay="1.5s" class="next wow bounceIn">NEXT</a>
+        </ul><a class="next wow bounceIn" href="#section03" data-wow-delay="1.5s">NEXT</a>
       </div>
     </div>
-    <div id="section03" class="pane types">
-      <div class="wrapper"><a href="#section02" class="prev">PREV</a>
+    <div class="pane types" id="section03">
+      <div class="wrapper"><a class="prev" href="#section02">PREV</a>
                 <h1 class="wow fadeIn">I create these types of projects
                 </h1>
         <ul>
-                  <li data-wow-duration="0.25s" data-wow-delay="1s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1s">
                     <h3>Forecast by City</h3>
                     <ul>
                       <li> <a href="http://vitaliykrushinsky.github.io/weatherSPA/#/" target="_blank"> <span class="fa fa-cog fa-spin"></span> Angularjs SPA</a></li>
                       <li><a href="https://github.com/vitaliykrushinsky/weatherSPA/" target="_blank"> <span class="fa fa-github-alt fa-lg"></span> GitHub Repo</a></li>
                     </ul>
                   </li>
-                  <li data-wow-duration="0.25s" data-wow-delay="1.25s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1.25s">
                     <h3>Roux Academy</h3>
                     <ul>
                       <li> <a href="https://webrouxapp.herokuapp.com/" target="_blank"> <span class="fa fa-cog fa-spin"></span> Bootstrap project</a></li>
                       <li><a href="https://github.com/vitaliykrushinsky/herokuApp_RouxAcademy/" target="_blank"> <span class="fa fa-github-alt fa-lg"></span> GitHub Repo</a></li>
                     </ul>
                   </li>
-                  <li data-wow-duration="0.25s" data-wow-delay="1.5s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1.5s">
                     <h3>ResponsiveSPA</h3>
                     <ul>
                       <li> <a href="http://vitaliykrushinsky.github.io/ResponsiveSingleWebPage/" target="_blank"> <span class="fa fa-cog fa-spin"></span> Single page of site based on Sass, Compass, Susy, Gulp</a></li>
                       <li><a href="https://github.com/vitaliykrushinsky/ResponsiveSingleWebPage/" target="_blank"> <span class="fa fa-github-alt fa-lg"></span> GitHub Repo</a></li>
                     </ul>
                   </li>
-                  <li data-wow-duration="0.25s" data-wow-delay="1.75s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1.75s">
                     <h3>BootstrapSPA</h3>
                     <ul>
                       <li> <a href="http://vitaliykrushinsky.github.io/bootstrapSinglePage/" target="_blank"> <span class="fa fa-cog fa-spin"></span> Single page of site based on Bootstrap</a></li>
                       <li><a href="https://github.com/vitaliykrushinsky/bootstrapSinglePage/" target="_blank"> <span class="fa fa-github-alt fa-lg"></span> GitHub Repo</a></li>
                     </ul>
                   </li>
-        </ul><a href="#section04" data-wow-delay="1.5s" class="next wow bounceIn">NEXT</a>
+        </ul><a class="next wow bounceIn" href="#section04" data-wow-delay="1.5s">NEXT</a>
       </div>
     </div>
-    <div id="section04" class="pane contact">
-      <div class="wrapper"><a href="#section03" class="prev">PREV</a>
+    <div class="pane contact" id="section04">
+      <div class="wrapper"><a class="prev" href="#section03">PREV</a>
                 <h1 class="wow fadeIn">CONTACT ME<br>Via These
                 </h1>
         <ul>
-                  <li data-wow-duration="0.25s" data-wow-delay="1s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1s">
                     <h3><span class="fa fa-envelope"></span> vitaliykrushinsky@gmail.com</h3>
                   </li>
-                  <li data-wow-duration="0.25s" data-wow-delay="1.25s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1.25s">
                     <h3><span class="fa fa-skype"></span> skynter1</h3>
                   </li>
-                  <li data-wow-duration="0.25s" data-wow-delay="1.5s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1.5s">
                     <h3><a href="https://www.facebook.com/vitaliy.krushinsky" target="_blank"><span class="fa fa-facebook-square"></span> Facebook</a></h3>
                   </li>
-                  <li data-wow-duration="0.25s" data-wow-delay="1.75s" class="wow fadeIn">
+                  <li class="wow fadeIn" data-wow-duration="0.25s" data-wow-delay="1.75s">
                     <h3><a href="https://www.linkedin.com/in/vitaliykrushinsky" target="_blank"><span class="fa fa-linkedin-square"></span> LinkedIn</a></h3>
                   </li>
         </ul>
