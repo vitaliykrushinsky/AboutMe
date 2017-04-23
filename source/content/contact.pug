@@ -6,13 +6,15 @@ include mixins
     | Via These
 ul
     +showSquare()
-        h3
-            span( class="fa fa-envelope" )
-            |  vitaliykrushinsky@gmail.com
+        h3  
+            a( href="mailto:vitaliykrushinsky@gmail.com" )
+                span( class="fa fa-envelope" )
+                |  vitaliykrushinsky@gmail.com
     +showSquare()
         h3
-            span( class="fa fa-skype" )
-            |  skynter1
+            a( href="skype:skynter1?add" )
+                span( class="fa fa-skype" )
+                |  skynter1
     +showSquare()
         h3
             a( href="https://www.facebook.com/vitaliy.krushinsky", target="_blank" )
